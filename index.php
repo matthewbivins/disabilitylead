@@ -15,7 +15,8 @@
 
 $context          = Timber::context();
 $context['posts'] = new Timber\PostQuery();
-$context['foo']   = 'bar';
+$context['foo']   = 'We believe people with disabilities will lead with power and influence for full participation and equal opportunity';
+$context['qux']   = 'Explore your leadership skills, disability identity, and civic engagement awareness in our Disability Lead Fellowship, a year-long program for aspiring leaders with disabilities. (Fellowship graduates are granted lifetime membership in our Disability Lead Network.)';
 $templates        = array( 'index.twig' );
 if ( is_home() ) {
 	array_unshift( $templates, 'front-page.twig', 'home.twig' );

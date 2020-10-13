@@ -3,13 +3,9 @@
  * Description: Starter Theme to use with Timber
  * Author: Upstatement and YOU!
 */
-h1 {
-  color: blue;
-}
-h1 a {
-  color: hotpink;
-}
 
-a {
-  color: black;
-}
+@import '_base';
+// @import '_forms';
+// @import '_tables';
+// @import 'components/_widget1';
+// etc...
