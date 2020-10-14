@@ -8,7 +8,58 @@
 
 	<body class="{{body_class}}" data-template="base.twig">
 		<a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
-		<header class="header" >
+		<div data-w-id="ffe6a042-1423-d799-df25-676f0f1b37f1" class="nav">
+			<a href="index.html" aria-current="page" class="brand w-inline-block w--current"><img src="images/logo-mark-white.svg" alt="" class="img-logo"><img src="images/logo-mark-color.svg" loading="lazy" alt="" class="img-logo img-logo--color"></a>
+			<div class="nav-container">
+				<a href="#" class="navlink">Donate</a>
+				<a href="#" class="navlink">Apply</a>
+				<a href="#" class="navlink">Log In</a>
+				<div data-w-id="ffe6a042-1423-d799-df25-676f0f1b37f5" class="menu-btn-f">
+					<div class="menu-icon-wrap">
+						<div class="top-line"></div>
+						<div class="mid-line"></div>
+						<div class="btm-line"></div>
+					</div>
+					<div class="txt-trans">menu</div>
+				</div>
+			</div>
+		</div>
+		<div class="navmenu-m">
+			<div class="main-nav"><img src="images/logo-placeholder.svg" alt="" class="logo-placeholder">
+				<ul role="list" class="w-list-unstyled">
+					<li class="navlink-wrap">
+						<a href="news.html" class="txt-nav">Events</a>
+					</li>
+					<li class="navlink-wrap">
+						<a href="supporters.html" class="txt-nav">Stories</a>
+					</li>
+					<li class="navlink-wrap">
+						<a href="about-us.html" class="txt-nav">About Us</a>
+					</li>
+					<li class="navlink-wrap">
+						<a href="leadership-institute.html" class="txt-nav">Disability Lead Institute</a>
+					</li>
+					<li class="navlink-wrap">
+						<a href="our-disability-leaders.html" class="txt-nav">Disability Lead Network</a>
+					</li>
+					<li class="navlink-wrap">
+						<a href="#" class="txt-nav">Disability Lead Connections Project</a>
+					</li>
+					<li class="navlink-wrap">
+						<a href="supporters.html" class="txt-nav">Supporters</a>
+					</li>
+					<li class="navlink-wrap">
+						<a href="#" class="txt-nav">Resources</a>
+					</li>
+					<li class="navlink-wrap">
+						<a href="our-disability-leaders.html" class="txt-nav">Our Disability Leaders</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		{# <header class="header" >
 			{% block header %}
 				<div class="wrapper">
 					<h1 class="hdr-logo" role="banner">
@@ -19,7 +70,7 @@
 					</nav><!-- #nav -->
 				</div>
 			{% endblock %}
-		</header>
+		</header> #}
 
 		<section id="content" role="main" class="content-wrapper">
 			{% if title %}<h1>{{title}}</h1>{% endif %}
@@ -39,6 +90,7 @@
 			<footer id="footer">
 				{% include 'footer.twig' %}
 			</footer>
+
 			{{ function('wp_footer') }}
 		{% endblock %}
 	</body>
